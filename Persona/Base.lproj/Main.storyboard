@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,242 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Take your heart" translatesAutoresizingMaskIntoConstraints="NO" id="Wcu-hH-C9A">
+                                <rect key="frame" x="0.0" y="286" width="375" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVK-mY-lZA">
+                                <rect key="frame" x="18" y="583" width="338" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn more about the Phantom Theives of Hearts">
+                                    <color key="titleColor" red="0.7890625" green="0.031377649357977856" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9yc-fY-fFF" kind="show" id="eMN-XQ-wgf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Persona 5" translatesAutoresizingMaskIntoConstraints="NO" id="AVm-v6-CYi">
+                                <rect key="frame" x="0.0" y="10" width="375" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Persona View Controller-->
+        <scene sceneID="3HA-SD-r9a">
+            <objects>
+                <viewController id="9yc-fY-fFF" customClass="PersonaViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e0A-ZC-Wwp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Neg-Ug-mee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="68e-h2-aAj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcF-yB-tvH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">The Phantom Thieves of Hearts (心の怪盗団, Kokoro no kaitō-dan)?, also known simply as the Phantom Thieves, is a group of Persona Users in Persona 5. Sick of the deception, hypocrisy and corruption around them, the Phantom Thieves are devoted to "stealing" the corrupt hearts of "evil" adults in order to change and reform society for the better, although they have also targeted teenagers such as Kazuya Makigami and Futaba Sakura. At one point, the player can name the group which will be shown on calling cards and online features with the default name of "The Phantoms" (ザ・ファントム?).</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-4X-av6">
+                                <rect key="frame" x="163" y="518" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="S.E.E.S">
+                                    <color key="titleColor" red="0.0" green="0.052858639189123632" blue="0.7890625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2dy-OQ-N71" kind="show" id="pV0-zz-SsE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf2-S1-6Sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.20000000000005" y="119.1904047976012"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ckT-pE-zv7">
+            <objects>
+                <viewController id="2dy-OQ-N71" customClass="SEESViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U0x-YX-zNC"/>
+                        <viewControllerLayoutGuide type="bottom" id="5BI-O2-4FY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fhf-Oa-CW0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SEES" translatesAutoresizingMaskIntoConstraints="NO" id="vz2-hq-zmw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s_e_e_s__by_the_twelve_gates" translatesAutoresizingMaskIntoConstraints="NO" id="OPF-0y-lDv">
+                                <rect key="frame" x="0.0" y="281" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEP-YR-ufD">
+                                <rect key="frame" x="100" y="546" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn more about S.E.E.S">
+                                    <color key="titleColor" red="0.0" green="0.026003854128529267" blue="0.83008824481865284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SZD-10-E61" kind="show" id="Aui-k4-GUG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20b-nY-Qd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jVH-gw-552">
+            <objects>
+                <viewController id="SZD-10-E61" customClass="SEES2ViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="At1-Me-Xqx"/>
+                        <viewControllerLayoutGuide type="bottom" id="I0u-Uh-EM0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D5J-Vc-wmh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHm-0F-joQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="632"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">The Specialized Extracurricular Execution Squad, (特別課外活動部, Tokubetsu Kagai Katsudou-bu)?, otherwise shortened to SEES, is an extracurricular after school club for Persona Users at Gekkoukan High School in Persona 3. While the school sponsors them and lists them as a school club, their true purpose is to eliminate the Shadows and investigate both Tartarus and the Dark Hour. Their advisor is Shuji Ikutsuki and Mitsuru Kirijo functions as the club leader. The protagonist or the female protagonist ends up leading the club in many instances due to their unique abilities. Other than Ikutsuki, all the members of SEES are Persona users. Additionally, all the members are students at Gekkoukan, other than Ken Amada and Koromaru. After school, they stay at a Iwatodai Dormitory. SEES is also backed up by the Kirijo Group, as well as certain members of the police such as Kurosawa, providing them access to anti-Shadow technology and weapons.
+
+In Persona 3 FES The Answer, SEES reforms in order to investigate the Abyss of Time after all of the members become trapped in the dorm. In the Persona 3 Manga, the fan translation of SEES is Special Extracurricular Execute Sector.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFu-aV-2gC">
+                                <rect key="frame" x="80" y="617" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Investigation Team">
+                                    <color key="titleColor" red="1" green="0.96867338588295437" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yYm-1Y-J8S" kind="show" id="dqX-xr-5o2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="We9-rn-Kgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813.5999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Persona4 View Controller-->
+        <scene sceneID="hKb-cG-uxI">
+            <objects>
+                <viewController id="yYm-1Y-J8S" customClass="Persona4ViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8dF-eI-KzK"/>
+                        <viewControllerLayoutGuide type="bottom" id="fT5-K1-22b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z9N-4c-lVm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="persona-4-golden-character-collage" translatesAutoresizingMaskIntoConstraints="NO" id="n8P-Rh-1wM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Persona_4" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-Di-Mqo">
+                                <rect key="frame" x="0.0" y="318" width="375" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jT8-hf-LnW">
+                                <rect key="frame" x="16" y="573" width="343" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn more about the Investigation Team">
+                                    <color key="titleColor" red="1" green="0.95500898131663481" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tdx-QX-Ebb" kind="show" id="wtC-0M-6cF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSM-uP-IA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="121.88905547226388"/>
+        </scene>
+        <!--Investigation View Controller-->
+        <scene sceneID="wWu-I8-qMF">
+            <objects>
+                <viewController id="Tdx-QX-Ebb" customClass="InvestigationViewController" customModule="Persona" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0J-WK-qRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="fiL-DH-Xov"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="brr-hr-WJi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbZ-Dl-kGf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">The Investigation Team is a group of Persona Users dedicated to investigating the phenomena of the Midnight Channel and stopping the murder cases in Yasoinaba in Persona 4. They work independently from the police because they feel the police are inept, and revealing the Midnight Channel to the police could make them no longer being able to enter the TV at Junes, potentially never catching the serial killer.
+
+The team functions somewhat similar to SEES of Persona 3, however, the Investigation Team is founded as an independent group, with no sponsors nor advisor, unlike SEES. However, one of the members is a detective (Naoto Shirogane) who occasionally gets information from the police. Ryotaro Dojima and Tohru Adachi also sometimes spill the beans and give updates on the case.
+
+The founding members of the Investigation Team are Yu Narukami, Yosuke Hanamura and Chie Satonaka, three students of Yasogami High School who've awakened their Personas.
+
+The Investigation Team also represents the Fool Arcana Social Link.
+
+
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJC-JP-9tN">
+                                <rect key="frame" x="34" y="595" width="306" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to the Phantom Thives of Hearts">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.05960557291662294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Mrx-KD-hEn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qv6-bG-5Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4460" y="120.98950524737631"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Persona 5" width="1280" height="720"/>
+        <image name="Persona_4" width="780" height="700"/>
+        <image name="SEES" width="800" height="502"/>
+        <image name="Take your heart" width="1770" height="1300"/>
+        <image name="persona-4-golden-character-collage" width="1440" height="900"/>
+        <image name="s_e_e_s__by_the_twelve_gates" width="3067" height="800"/>
+    </resources>
 </document>

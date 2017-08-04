@@ -12,6 +12,11 @@
 		0823D5F51F34C7930064872D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0823D5F31F34C7930064872D /* Main.storyboard */; };
 		0823D5F71F34C7930064872D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0823D5F61F34C7930064872D /* Assets.xcassets */; };
 		0823D5FA1F34C7930064872D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0823D5F81F34C7930064872D /* LaunchScreen.storyboard */; };
+		0823D6021F34C93C0064872D /* PersonaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D6011F34C93C0064872D /* PersonaViewController.swift */; };
+		0823D6041F34CCC10064872D /* SEESViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D6031F34CCC10064872D /* SEESViewController.swift */; };
+		0823D6061F34CE500064872D /* SEES2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D6051F34CE500064872D /* SEES2ViewController.swift */; };
+		0823D60A1F34D0A70064872D /* Persona4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D6091F34D0A70064872D /* Persona4ViewController.swift */; };
+		0823D60C1F34D1690064872D /* InvestigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D60B1F34D1690064872D /* InvestigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0823D5F61F34C7930064872D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0823D5F91F34C7930064872D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0823D5FB1F34C7930064872D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0823D6011F34C93C0064872D /* PersonaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonaViewController.swift; sourceTree = "<group>"; };
+		0823D6031F34CCC10064872D /* SEESViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEESViewController.swift; sourceTree = "<group>"; };
+		0823D6051F34CE500064872D /* SEES2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEES2ViewController.swift; sourceTree = "<group>"; };
+		0823D6091F34D0A70064872D /* Persona4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona4ViewController.swift; sourceTree = "<group>"; };
+		0823D60B1F34D1690064872D /* InvestigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				0823D5F61F34C7930064872D /* Assets.xcassets */,
 				0823D5F81F34C7930064872D /* LaunchScreen.storyboard */,
 				0823D5FB1F34C7930064872D /* Info.plist */,
+				0823D6011F34C93C0064872D /* PersonaViewController.swift */,
+				0823D6031F34CCC10064872D /* SEESViewController.swift */,
+				0823D6051F34CE500064872D /* SEES2ViewController.swift */,
+				0823D6091F34D0A70064872D /* Persona4ViewController.swift */,
+				0823D60B1F34D1690064872D /* InvestigationViewController.swift */,
 			);
 			path = Persona;
 			sourceTree = "<group>";
@@ -136,8 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0823D60A1F34D0A70064872D /* Persona4ViewController.swift in Sources */,
 				0823D5F21F34C7930064872D /* ViewController.swift in Sources */,
+				0823D6021F34C93C0064872D /* PersonaViewController.swift in Sources */,
+				0823D6041F34CCC10064872D /* SEESViewController.swift in Sources */,
 				0823D5F01F34C7930064872D /* AppDelegate.swift in Sources */,
+				0823D6061F34CE500064872D /* SEES2ViewController.swift in Sources */,
+				0823D60C1F34D1690064872D /* InvestigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
